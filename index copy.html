@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>POS-PROMOTION</title>
+</head>
+<body>
+   <style>
+      body {margin: 0; font-size: 100%;}
+      .contain {
+         margin: 0 auto; 
+         max-width: 480px;
+         background-color: #f8f8f8;
+      }
+      img {
+         width: 100%;
+         image-rendering: -webkit-optimize-contrast;
+         backface-visibility: hidden;
+         transform: translateZ(0);
+      }
+      .contain { text-align: center; padding-bottom: 3rem}
+ 
+      .link_wrap {
+         position: fixed; bottom: 0; left: 50%; transform: translateX(-50%);
+         padding: 1rem 0; background: transparent; width: 100%; 
+         overflow: hidden;
+         display: flex; justify-content: flex-first;
+      }
+      .link_wrap a:first-child { flex:1;}
+      .link_wrap a:last-child { flex: .1;}
+      .link_wrap:after {
+         content: ''; margin-top: 1rem;
+         position: absolute; z-index: -1;
+         top: 0; left: 0; width: 100%; height: 120px;
+         background: transparent;
+         box-shadow: 0 0 24px 0 rgba(50,50,50,.2);
+      }
+      .link_wrap:before {
+         content: '';
+         position: absolute; z-index: -1;
+         bottom: 0; left: 0; width: 100%; height: 90px;
+         background-color: white;
+      }
+      @media (min-width: 280px) {
+         .link_wrap {
+            max-width: 480px;
+         }
+      }
+      .link_wrap a { 
+         text-align: center;
+         text-decoration: none; padding: 1rem; display: block; font-size: 20px;
+         background-color: #5654a3; margin: 0; border-radius: 10px; color : white;
+         margin: 1rem 1rem 0;
+         width: 100%;
+      }
+      /* .link_wrap a:not(:last-child) {margin-right: 10px;} */
+      a:visited, a:active, a:link {color: white;}
+   </style>
+   <div class="contain">
+      <img src="./imgs/pormotion.jpg" alt="pormotion.jpg">
+   </div>
+   <div class="bottomFix">
+      <div class="link_wrap">
+         <a href="">가입하기</a>
+         <a href="">TOP</a>
+      </div>
+   </div>
+</body>
+</html>
