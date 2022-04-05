@@ -70,15 +70,15 @@
    </div>
    <div class="bottomFix">
       <div class="link_wrap">
-         <a href="">가입하기</a>
+         <a href="javascript:void(0)">가입하기</a>
          <a href=""><i class="bi bi-chevron-up"></i></a>
       </div>
    </div>
 
    <script>
-      let link_wrap = document.querySelector('.link_wrap');
+      let topBtn = document.querySelector('.link_wrap a:last-child');
       let contain = document.querySelector('.contain');
-      link_wrap.addEventListener('click', e => {
+      topBtn.addEventListener('click', e => {
          e.preventDefault();
          console.log('test');
          window.scroll({top:contain.offsetTop, behavior:"smooth"});
